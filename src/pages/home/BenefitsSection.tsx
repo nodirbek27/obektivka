@@ -24,8 +24,8 @@ export default function BenefitsSection() {
       </div>
       <div className="grid grid-cols-2 gap-x-10 gap-y-7 max-[768px]:grid-cols-1 max-[768px]:gap-6">
         {benefits.map((b) => (
-          <div key={b.title} className="flex items-start gap-4">
-            <div className="flex size-11.5 shrink-0 items-center justify-center rounded-[13px] bg-(--brand-primary)/8">
+          <div key={b.title} className="group flex items-start gap-4">
+            <div className="flex size-11.5 shrink-0 items-center justify-center rounded-[13px] bg-(--brand-primary)/8 transition-transform duration-300 group-hover:scale-110">
               <b.icon color="primary" sx={{ fontSize: 22 }} />
             </div>
             <div>

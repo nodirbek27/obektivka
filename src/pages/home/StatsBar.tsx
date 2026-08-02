@@ -16,7 +16,7 @@ export default function StatsBar() {
         <div
           key={s.label}
           className={
-            'flex flex-col gap-1 px-4 py-7 text-center max-[768px]:py-5 ' +
+            'flex flex-col gap-1 px-4 py-7 text-center transition-colors duration-300 hover:bg-(--brand-primary)/4 max-[768px]:py-5 ' +
             (i < stats.length - 1 ? 'border-r border-slate-100 max-[768px]:border-r-0' : '') +
             (i < stats.length - 2 ? ' max-[768px]:border-b max-[768px]:border-slate-100' : '')
           }

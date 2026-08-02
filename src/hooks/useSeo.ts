@@ -38,6 +38,7 @@ function setPageJsonLd(meta: RouteMeta) {
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
     name: meta.seoTitle,
+    ...(meta.alternateNames?.length ? { alternateName: meta.alternateNames } : {}),
     description: meta.description,
     url: meta.canonical,
     applicationCategory: 'BusinessApplication',

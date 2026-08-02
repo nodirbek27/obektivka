@@ -58,6 +58,18 @@
       "title": "Obyektivkangizni yaratishga tayyormisiz?",
       "subtitle": "Bepul, tez, hisob shart emas. Ma'lumotlaringizni kiriting va bir necha daqiqada yuklab oling.",
       "build_obektivka": "Obyektivka yaratish"
+    },
+    "faq": {
+      "title": "Ko'p beriladigan savollar",
+      "subtitle": "Obektivka (obyektivka) haqida bilishingiz kerak bo'lgan hammasi.",
+      "q1": "Obektivka (obyektivka) nima?",
+      "a1": "Obektivka — shaxsning ta'lim, mehnat faoliyati, oilaviy holati va boshqa shaxsiy ma'lumotlarini o'z ichiga olgan rasmiy ma'lumotnoma hujjati. Bu so'z ba'zan \"obyektivka\" yoki \"ob'ektivka\" deb ham yoziladi — barchasi bir xil hujjatni anglatadi.",
+      "q2": "Obektivka qanday tuziladi?",
+      "a2": "Obektivka.uz saytida shaxsiy ma'lumotlaringizni forma orqali kiriting — hujjat real vaqtda tayyor bo'ladi va uni darhol Word yoki PDF formatida bepul yuklab olishingiz mumkin.",
+      "q3": "Obektivka (obyektivka) tuzish uchun ro'yxatdan o'tish kerakmi?",
+      "a3": "Yo'q. Xizmat butunlay bepul va hisob yaratish shart emas. Barcha ma'lumotlar faqat sizning brauzeringizda saqlanadi va serverga yuborilmaydi.",
+      "q4": "Obektivka qaysi tashkilotlar uchun kerak bo'ladi?",
+      "a4": "Obektivka davlat idoralari, ta'lim muassasalari va boshqa rasmiy tashkilotlarga hujjat topshirishda talab qilinadigan standart ma'lumotnoma hisoblanadi."
     }
   }
 }

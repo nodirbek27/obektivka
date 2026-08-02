@@ -90,7 +90,8 @@ export default function ObektivkaPage() {
       <div className="obektivka-container">
         <div className="obektivka-topbar">
           <div>
-            <h3>Ma'lumotlarni to'ldiring va yuklab oling</h3>
+            <h1 className="obektivka-heading">Obektivka (Obyektivka) tuzish</h1>
+            <p className="obektivka-sub">Ma'lumotlarni to'ldiring va rasmiy ma'lumotnomani yuklab oling</p>
           </div>
           <div className="obektivka-actions">
             <ObektivkaExport formData={formData} previewRef={previewRef} />

@@ -3,7 +3,6 @@ import './DonateDialog.css'
 import CloseIcon from '@mui/icons-material/Close'
 import FavoriteIcon from '@mui/icons-material/Favorite'
 import DownloadIcon from '@mui/icons-material/Download'
-import LocalCafeIcon from '@mui/icons-material/LocalCafe'
 import PaymentIcon from '@mui/icons-material/Payment'
 
 interface Props {
@@ -12,7 +11,6 @@ interface Props {
     onConfirm: () => void
 }
 
-const BUY_ME_A_COFFEE_URL = 'https://buymeacoffee.com/nodirjon09a'
 const CLICK_URL = 'https://my.click.uz/pay/HAVOLANGIZNI_SHU_YERGA_QOYING'
 const PAYME_URL = 'https://payme.uz/HAVOLANGIZNI_SHU_YERGA_QOYING'
 
@@ -32,25 +30,13 @@ export default function DonateDialog({ open, onClose, onConfirm }: Props) {
                         <div className="donate-icon">
                                   <FavoriteIcon sx={{ fontSize: 22, color: 'white' }} />
                         </div>
-                        <h3 className="donate-title">Enjoying Obektivka.uz?</h3>
+                        <h3 className="donate-title">Obektivka.uz sizga foydali bo'ldimi?</h3>
                         <p className="donate-sub">
-                                  This tool is free. If it helped you, consider supporting its development.
+                                  Bu xizmat bepul. Agar sizga foyda keltirgan bo'lsa, uning rivojlanishini
+                                  qo'llab-quvvatlashingiz mumkin.
                         </p>
                 </div>
-        
-              <Button
-                        variant="outlined"
-                        fullWidth
-                        startIcon={<LocalCafeIcon />}
-                        component="a"
-                        href={BUY_ME_A_COFFEE_URL}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        sx={{ borderRadius: 999, textTransform: 'none', fontWeight: 600, fontSize: 13, mb: 1.5 }}
-                      >
-                      Buy Me a Coffee
-              </Button>
-        
+
               <Button
                         variant="outlined"
                         fullWidth
@@ -87,7 +73,7 @@ export default function DonateDialog({ open, onClose, onConfirm }: Props) {
                         onClick={proceedDownload}
                         sx={{ borderRadius: 999, textTransform: 'none', fontWeight: 700, fontSize: 14, py: 1.25 }}
                       >
-                      Download
+                      Yuklab olish
               </Button>
         </Dialog>
       )
