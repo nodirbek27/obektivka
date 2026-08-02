@@ -1,121 +1,63 @@
 {
   "menu": {
-    "obektivka": "Obyektivka",
-    "resume": "Rezyume (CV)",
-    "coverLetter": "Muqova Xati"
+    "obektivka": "Obyektivka"
   },
-  "title": {
-    "defaultDialogTitle": "Ma'lumotlarni kiriting",
-    "productCategory": "Tovar kategoriyalari",
-    "characteristics": "Hususiyatlar",
-    "partnersPosition": "Hamkorlar lavozimi",
-    "productGroups": "Tovar guruhlari",
-    "id": "ID",
-    "name": "Nomi",
-    "actions": "Harakatlar",
-    "users": "Foydalanuvchilar",
-    "dashboard": "Dashboard"
-  },
-  "label": {
-    "cancel": "Bekor qilish",
-    "save": "Saqlash",
-    "edit": "Tahrirlash",
-    "add": "Qo'shish",
-    "delete": "O'chirish",
-    "errorMsg": "Xatolik yuz berdi!",
-    "successMsg": "Muvaffaqiyali bajaildi!",
-    "loginSystem": "Tizimga kirish",
-    "logoutSystem": "Tizimdan chiqish",
-    "login": "Login",
-    "password": "Parol",
-    "remember": "Eslab qolish",
-    "requiresAuth": "Avtorizatsiya qilinmagan!",
-    "partners": "Hamkorlar",
-    "products": "Tovarlar",
-    "noData": "M'alumot topilmadi!",
-    "logout": "Chiqish",
-    "errorAccured": "Xatolik yuz berdi!",
-    "wrongRequest": "Noto'g'ri so'rov!",
-    "notAllowed": "Sizda ruxsat yo'q!",
-    "serverError": "Serverda xatolik yuz berdi!",
-    "requestTimeout": "So'rov vaqti tugadi!",
-    "branches": "Filiallar",
-    "search": "Qidirish",
-    "type": "Turi",
-    "refresh": "Yangilash",
-    "territory": "Hudud"
-  },
-  "table": {
-    "phone": "Telefon",
-    "fio": "F.I.O",
-    "position": "Lavozim",
-    "loginTime": "Tashrif vaqti",
-    "status": "Holati",
-    "active": "Faol",
-    "notActive": "Nofaol",
-    "consultant": "Maslahatchi",
-    "colobration": "Kolobratsiya"
+  "layout": {
+    "footer_tagline": "Ma'lumotlaringiz hech qachon qurilmangizdan chiqmaydi",
+    "footer_free_forever": "Doimo bepul",
+    "choose_color": "Rangni tanlang",
+    "color_theme": "Rang mavzusi"
   },
   "home": {
-    "welcome_message": "Professional hujjatlaringizni yarating",
-    "subtitle": "Resume, Cover Letter va Obyektivka – barchasini bir joyda tayyorlang va PDF yuklang",
-    "create_resume": "Resume yaratish",
-    "create_cover_letter": "Cover Letter yaratish",
+    "hero_badge": "Bepul · Ro'yxatdan o'tish shart emas · Bir zumda yuklab olish",
+    "welcome_message": "Obyektivkangizni bir necha daqiqada yarating",
+    "subtitle": "Rasmiy ma'lumotnoma shaklini to'ldiring, uni real vaqtda ko'ring va Word yoki PDF formatida — chop etishga tayyor holda yuklab oling.",
     "create_obektivka": "Obyektivka yaratish",
-    "hero_badge": "Bepul · Ro'yxatdan o'tmasdan · Tezkor PDF",
     "trust": {
       "no_registration": "Ro'yxatdan o'tish shart emas",
-      "data_on_device": "Ma'lumotlar qurilmada saqlanadi",
-      "free_forever": "Doim bepul"
+      "data_on_device": "Ma'lumotlar qurilmangizda qoladi",
+      "free_forever": "Doimo bepul"
     },
     "stats": {
-      "resume_templates": "Rezyume shablonlari",
-      "cover_letter_styles": "Muqova xati uslublari",
-      "free_forever": "Har doim bepul",
-      "no_account": "Akkaunt kerak emas"
-    },
-    "feature": {
-      "resume_title": "Professional Resume",
-      "resume_desc": "Xalqaro standartlarga mos zamonaviy resume yarating va PDF yuklab oling.",
-      "cover_letter_title": "Cover Letter",
-      "cover_letter_desc": "Rekruterlarni taassurlantiruvchi muqova xati yozing.",
-      "obektivka_title": "Obyektivka (Ma’lumotnoma)",
-      "obektivka_desc": "Rasmiy obyektivka hujjatini to’ldiring va chop eting."
+      "official_format": "Rasmiy A4 format",
+      "export_formats": "Eksport formatlari",
+      "free_forever": "Doimo bepul",
+      "no_account": "Kerakli hisob"
     },
     "docs": {
-      "title": "Uchta hujjat, bitta joyda",
-      "subtitle": "Ish qidiruvchiga kerak bo'lgan hamma narsa — bir necha daqiqada tayyor va yuklab olinadi."
+      "title": "Obyektivkangiz uchun hammasi",
+      "subtitle": "Rasmiy standartga mos to'liq hujjat — bir necha daqiqada tuziladi va yuklab olinadi.",
+      "point_official": "Rasmiy davlat namunasiga mos keladi",
+      "point_photo": "3×4 rasm va shaxsiy ma'lumotlarni o'z ichiga oladi",
+      "point_family": "Oila va mehnat faoliyati bo'limlari",
+      "point_export": "Word yoki PDF formatida bir zumda eksport"
+    },
+    "feature": {
+      "obektivka_title": "Obyektivka (rasmiy ma'lumotnoma)",
+      "obektivka_desc": "Rasmiy obyektivka hujjatini to'ldiring va uni chop etishga tayyor holda yuklab oling — dizayn ko'nikmalari shart emas."
     },
     "steps": {
       "title": "Bu qanday ishlaydi",
-      "step1": "Shablon tanlang",
+      "step1": "Rang mavzusini tanlang",
       "step2": "Ma'lumotlaringizni kiriting",
-      "step3": "PDF sifatida yuklab oling"
+      "step3": "PDF yoki Word formatida yuklab oling"
     },
     "benefits": {
-      "title": "Nega aynan ResumeIO",
-      "subtitle": "Tez, xavfsiz va haqiqatan foydali bo'lishi uchun yaratilgan.",
+      "title": "Nega Obektivka.uz",
+      "subtitle": "Tez, xavfsiz va haqiqatan ham foydali bo'lishi uchun yaratilgan.",
       "privacy_title": "Ma'lumotlaringiz maxfiy qoladi",
-      "privacy_desc": "Barcha ma'lumotlar faqat brauzeringizda saqlanadi. Hech narsa serverga yuborilmaydi.",
+      "privacy_desc": "Hammasi faqat brauzeringizda saqlanadi. Hech narsa serverga yuklanmaydi.",
       "realtime_title": "Real vaqtda ko'rish",
-      "realtime_desc": "Yozayotganingizda hujjatingiz jonli yangilanadi — kutish yoki sahifani yangilash shart emas.",
-      "templates_title": "Ko'plab shablonlar",
-      "templates_desc": "Zamonaviy, Klassik, Ijodiy va boshqa uslublar. Ma'lumotlaringizni yo'qotmasdan istalgan vaqtda almashtiring.",
-      "pdf_title": "Bir bosishda PDF yuklash",
-      "pdf_desc": "Aniq, chop etishga tayyor PDF faylni bir zumda yuklab oling. Suv belgisiz, cheklovsiz."
+      "realtime_desc": "Yozayotganingizda hujjat jonli yangilanishini kuzating — kutish yoki sahifani yangilash shart emas.",
+      "templates_title": "Rasmiy standart",
+      "templates_desc": "Davlat va nodavlat tashkilotlari talab qiladigan aniq formatga mos keladi.",
+      "pdf_title": "Bir bosishda eksport",
+      "pdf_desc": "Aniq, chop etishga tayyor PDF yoki Word faylini bir zumda yuklab oling. Suv belgilarisiz, cheklovlarsiz."
     },
     "cta": {
-      "title": "Keyingi ish o'rningizni topishga tayyormisiz?",
-      "subtitle": "Rezyume, muqova xati va obyektivkangizni yarating — bepul, tez, ro'yxatdan o'tmasdan.",
-      "build_resume": "Rezyume yaratish",
-      "write_cover_letter": "Muqova xati yozish"
+      "title": "Obyektivkangizni yaratishga tayyormisiz?",
+      "subtitle": "Bepul, tez, hisob shart emas. Ma'lumotlaringizni kiriting va bir necha daqiqada yuklab oling.",
+      "build_obektivka": "Obyektivka yaratish"
     }
-  },
-  "layout": {
-    "footer_tagline": "Ma'lumotlaringiz qurilmangizdan chiqmaydi",
-    "footer_free_forever": "Doim bepul",
-    "choose_color": "Rangni tanlang",
-    "color_theme": "Rang mavzusi"
   }
 }
-

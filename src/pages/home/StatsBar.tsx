@@ -4,8 +4,8 @@ export default function StatsBar() {
   const { t } = useTranslation()
 
   const stats = [
-    { value: '9', label: t('home.stats.resume_templates') },
-    { value: '5', label: t('home.stats.cover_letter_styles') },
+    { value: 'A4', label: t('home.stats.official_format') },
+    { value: '2', label: t('home.stats.export_formats') },
     { value: '100%', label: t('home.stats.free_forever') },
     { value: '0', label: t('home.stats.no_account') },
   ]

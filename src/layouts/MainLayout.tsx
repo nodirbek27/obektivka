@@ -24,12 +24,7 @@ export default function MainLayout() {
 
   return (
     <div className="flex min-h-screen flex-col bg-slate-50">
-      <Header
-        isScrolled={isScrolled}
-        themeColor={themeColor}
-        onThemeColorChange={setThemeColor}
-        onOpenDrawer={() => setDrawerOpen(true)}
-      />
+      <Header isScrolled={isScrolled} themeColor={themeColor} onThemeColorChange={setThemeColor} />
 
       <MobileDrawer
         open={drawerOpen}

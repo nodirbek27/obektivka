@@ -16,16 +16,10 @@ export default function FinalCtaSection() {
         <p className="m-0 mb-8 text-[0.95rem] leading-[1.7] text-white/80">{t('home.cta.subtitle')}</p>
         <div className="flex flex-wrap justify-center gap-3 max-[768px]:flex-col max-[768px]:items-center">
           <Link
-            to="/resume"
+            to="/obektivka"
             className="inline-flex items-center justify-center rounded-full bg-white px-7 py-3 text-sm font-bold text-(--brand-primary) no-underline max-[768px]:w-full max-[768px]:max-w-70"
           >
-            {t('home.cta.build_resume')}
-          </Link>
-          <Link
-            to="/cover-letter"
-            className="inline-flex items-center justify-center rounded-full border border-white/50 px-7 py-3 text-sm font-bold text-white no-underline transition-colors hover:bg-white/10 max-[768px]:w-full max-[768px]:max-w-70"
-          >
-            {t('home.cta.write_cover_letter')}
+            {t('home.cta.build_obektivka')}
           </Link>
         </div>
       </div>

@@ -2,8 +2,8 @@ import { useEffect } from 'react'
 import type { RouteMeta } from '@/router/routes'
 import i18n from '@/i18n'
 
-const OG_IMAGE = 'https://resumeio.uz/og-image.svg'
-const LOCALE_MAP: Record<string, string> = { en: 'en_US', ru: 'ru_RU', uz: 'uz_UZ' }
+const OG_IMAGE = 'https://obektivka.uz/og-image.svg'
+const LOCALE_MAP: Record<string, string> = { uz: 'uz_UZ', uzcyrl: 'uz_UZ' }
 const JSONLD_ID = 'seo-jsonld-page'
 
 function setMeta(attr: string, key: string, content: string) {
@@ -48,21 +48,21 @@ function setPageJsonLd(meta: RouteMeta) {
 
 export function useSeo(meta: RouteMeta) {
   useEffect(() => {
-    const title = meta.seoTitle || 'ResumeIO'
+    const title = meta.seoTitle || 'Obektivka.uz'
     const description = meta.description || ''
-    const canonical = meta.canonical || 'https://resumeio.uz'
+    const canonical = meta.canonical || 'https://obektivka.uz'
 
     document.title = title
     setMeta('name', 'description', description)
     setMeta('name', 'robots', 'index, follow')
 
     setMeta('property', 'og:type', 'website')
-    setMeta('property', 'og:site_name', 'ResumeIO')
+    setMeta('property', 'og:site_name', 'Obektivka.uz')
     setMeta('property', 'og:title', title)
     setMeta('property', 'og:description', description)
     setMeta('property', 'og:url', canonical)
     setMeta('property', 'og:image', OG_IMAGE)
-    setMeta('property', 'og:locale', LOCALE_MAP[i18n.language] || 'en_US')
+    setMeta('property', 'og:locale', LOCALE_MAP[i18n.language] || 'uz_UZ')
 
     setMeta('name', 'twitter:card', 'summary_large_image')
     setMeta('name', 'twitter:title', title)

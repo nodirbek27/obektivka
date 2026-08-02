@@ -32,7 +32,7 @@ export default function DonateDialog({ open, onClose, onConfirm }: Props) {
                         <div className="donate-icon">
                                   <FavoriteIcon sx={{ fontSize: 22, color: 'white' }} />
                         </div>
-                        <h3 className="donate-title">Enjoying ResumeIO?</h3>
+                        <h3 className="donate-title">Enjoying Obektivka.uz?</h3>
                         <p className="donate-sub">
                                   This tool is free. If it helped you, consider supporting its development.
                         </p>

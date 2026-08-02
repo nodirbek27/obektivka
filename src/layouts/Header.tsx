@@ -1,30 +1,18 @@
 import { useState } from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { IconButton, Menu } from '@mui/material'
-import MenuIcon from '@mui/icons-material/Menu'
+import { Menu } from '@mui/material'
 import PaletteOutlinedIcon from '@mui/icons-material/PaletteOutlined'
-import BadgeOutlinedIcon from '@mui/icons-material/BadgeOutlined'
-import EditNoteOutlinedIcon from '@mui/icons-material/EditNoteOutlined'
-import ContactMailOutlinedIcon from '@mui/icons-material/ContactMailOutlined'
-import { navMenus } from '@/router/routes'
 import { THEME_COLORS } from '@/theme/themeColors'
 import ThemeColorSwatches from './ThemeColorSwatches'
-
-const menuIconMap: Record<string, typeof BadgeOutlinedIcon> = {
-  resume: BadgeOutlinedIcon,
-  coverLetter: EditNoteOutlinedIcon,
-  obektivka: ContactMailOutlinedIcon,
-}
 
 interface Props {
   isScrolled: boolean
   themeColor: string
   onThemeColorChange: (color: string) => void
-  onOpenDrawer: () => void
 }
 
-export default function Header({ isScrolled, themeColor, onThemeColorChange, onOpenDrawer }: Props) {
+export default function Header({ isScrolled, themeColor, onThemeColorChange }: Props) {
   const { t } = useTranslation()
   const [colorMenuAnchor, setColorMenuAnchor] = useState<HTMLElement | null>(null)
 
@@ -38,51 +26,15 @@ export default function Header({ isScrolled, themeColor, onThemeColorChange, onO
       }
     >
       <div className="mx-auto flex min-h-16 max-w-275 items-center px-4">
-        <IconButton
-          size="small"
-          onClick={onOpenDrawer}
-          className="mr-2! hidden! max-[600px]:inline-flex!"
-        >
-          <MenuIcon />
-        </IconButton>
-
         <Link
           to="/"
           className="flex items-center gap-2 text-lg font-extrabold tracking-tight text-slate-800 no-underline"
         >
           <span className="flex size-7.5 shrink-0 items-center justify-center rounded-lg bg-(--brand-primary) text-[15px] font-black text-white">
-            R
+            O
           </span>
-          ResumeIO
+          Obektivka.uz
         </Link>
-
-        <div className="flex-1" />
-
-        <nav className="flex items-center gap-1 max-[600px]:hidden">
-          {navMenus.map((menu) => {
-            const Icon = menuIconMap[menu.name]
-            return (
-              <NavLink
-                key={menu.name}
-                to={`/${menu.path}`}
-                end
-                className={({ isActive }) =>
-                  'inline-flex items-center gap-1.5 rounded-lg px-3.5 py-1.5 text-[13.5px] font-medium no-underline transition-colors ' +
-                  (isActive
-                    ? 'bg-(--brand-primary) font-semibold text-white'
-                    : 'text-slate-600 hover:bg-black/5 hover:text-slate-800')
-                }
-              >
-                {({ isActive }) => (
-                  <>
-                    <Icon sx={{ fontSize: 15 }} className={isActive ? 'opacity-100' : 'opacity-70'} />
-                    {t(menu.meta.titleKey)}
-                  </>
-                )}
-              </NavLink>
-            )
-          })}
-        </nav>
 
         <div className="flex-1" />
 
@@ -90,7 +42,7 @@ export default function Header({ isScrolled, themeColor, onThemeColorChange, onO
           type="button"
           aria-label={t('layout.choose_color')}
           onClick={(e) => setColorMenuAnchor(e.currentTarget)}
-          className="flex size-9 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-800 transition-colors hover:bg-slate-50 max-[600px]:hidden"
+          className="mr-2 flex size-9 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-800 transition-colors hover:bg-slate-50 max-[600px]:hidden"
         >
           <PaletteOutlinedIcon sx={{ fontSize: 16 }} />
         </button>

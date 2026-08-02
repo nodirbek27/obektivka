@@ -2,11 +2,8 @@ import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome'
 import CheckCircleIcon from '@mui/icons-material/CheckCircle'
-import PersonIcon from '@mui/icons-material/Person'
-import BadgeOutlinedIcon from '@mui/icons-material/BadgeOutlined'
-import EditNoteOutlinedIcon from '@mui/icons-material/EditNoteOutlined'
 import ContactMailOutlinedIcon from '@mui/icons-material/ContactMailOutlined'
-import { Bar, Tag } from './mockBars'
+import { Bar } from './mockBars'
 
 export default function HeroSection() {
   const { t } = useTranslation()
@@ -27,30 +24,12 @@ export default function HeroSection() {
         </p>
 
         <Link
-          to="/resume"
-          className="mb-4.5 inline-flex items-center gap-2 rounded-full bg-(--brand-primary) px-8 py-3.5 text-[15px] font-bold text-white no-underline shadow-[0_4px_16px_rgba(var(--brand-primary-rgb,35,159,85),0.35)] max-[768px]:w-full max-[768px]:max-w-80 max-[768px]:justify-center"
+          to="/obektivka"
+          className="mb-6 inline-flex items-center gap-2 rounded-full bg-(--brand-primary) px-8 py-3.5 text-[15px] font-bold text-white no-underline shadow-[0_4px_16px_rgba(var(--brand-primary-rgb,35,159,85),0.35)] max-[768px]:w-full max-[768px]:max-w-80 max-[768px]:justify-center"
         >
-          <BadgeOutlinedIcon sx={{ fontSize: 18 }} />
-          {t('home.create_resume')}
+          <ContactMailOutlinedIcon sx={{ fontSize: 18 }} />
+          {t('home.create_obektivka')}
         </Link>
-
-        <div className="mb-6 flex items-center gap-2.5 max-[768px]:justify-center">
-          <Link
-            to="/cover-letter"
-            className="inline-flex items-center gap-1.5 text-[13.5px] font-semibold text-slate-600 no-underline transition-colors hover:text-(--brand-primary)"
-          >
-            <EditNoteOutlinedIcon sx={{ fontSize: 15 }} />
-            {t('home.create_cover_letter')}
-          </Link>
-          <span className="text-base text-slate-300">&middot;</span>
-          <Link
-            to="/obektivka"
-            className="inline-flex items-center gap-1.5 text-[13.5px] font-semibold text-slate-600 no-underline transition-colors hover:text-(--brand-primary)"
-          >
-            <ContactMailOutlinedIcon sx={{ fontSize: 15 }} />
-            {t('home.create_obektivka')}
-          </Link>
-        </div>
 
         <div className="flex flex-wrap gap-3.5 max-[768px]:justify-center">
           {[
@@ -67,59 +46,53 @@ export default function HeroSection() {
       </div>
 
       <div className="relative flex items-center justify-center" aria-hidden="true">
-        <div className="relative z-2 flex h-57.5 w-80 overflow-hidden rounded-xl border border-black/8 shadow-[0_20px_60px_rgba(0,0,0,0.18),0_4px_12px_rgba(0,0,0,0.08)] max-[768px]:h-50 max-[768px]:w-70 max-[480px]:h-42.5 max-[480px]:w-60">
-          {/* sidebar */}
-          <div className="w-[36%] shrink-0 bg-slate-800 px-3 py-4">
-            <div className="mx-auto flex size-10 items-center justify-center rounded-full bg-white/15 text-white/65">
-              <PersonIcon sx={{ fontSize: 20 }} />
+        <div className="relative z-2 flex h-72.5 w-56 flex-col overflow-hidden rounded-xl border border-black/8 bg-white p-4 shadow-[0_20px_60px_rgba(0,0,0,0.18),0_4px_12px_rgba(0,0,0,0.08)] max-[768px]:h-64 max-[768px]:w-49 max-[480px]:h-56 max-[480px]:w-42">
+          <div className="mx-auto mb-2.5 text-[8px] font-black tracking-[0.12em] text-slate-800 uppercase">
+            Ma&rsquo;lumotnoma
+          </div>
+          <div className="flex items-start justify-between gap-2">
+            <div className="flex-1">
+              <Bar width="90%" height={4} tone="dark" alpha={0.6} />
+              <Bar width="65%" fade={0.6} mt={5} />
             </div>
-            <Bar width="70%" mt={10} />
-            <Bar width="50%" fade={0.6} mt={4} />
-            <div className="mt-3 h-px bg-white/10" />
-            <Bar width="40%" height={4} tone="brand" mt={10} />
-            <Bar width="80%" mt={8} />
-            <Bar width="65%" fade={0.7} mt={5} />
-            <Bar width="55%" fade={0.5} mt={5} />
-            <div className="mt-3 h-px bg-white/10" />
-            <Bar width="40%" height={4} tone="brand" mt={10} />
-            <div className="mt-2 flex flex-wrap gap-1">
-              <Tag width={28} />
-              <Tag width={36} />
-              <Tag width={28} />
-              <Tag width={36} />
-              <Tag width={44} />
+            <div className="size-8.5 shrink-0 rounded-[3px] border border-slate-300 bg-slate-100" />
+          </div>
+
+          <div className="mt-3.5 grid grid-cols-2 gap-x-2.5 gap-y-2.5">
+            <div>
+              <Bar width="70%" height={4} tone="brand" alpha={0.5} />
+              <Bar width="85%" fade={0.6} mt={4} />
+            </div>
+            <div>
+              <Bar width="70%" height={4} tone="brand" alpha={0.5} />
+              <Bar width="80%" fade={0.6} mt={4} />
+            </div>
+            <div>
+              <Bar width="55%" height={4} tone="brand" alpha={0.5} />
+              <Bar width="60%" fade={0.6} mt={4} />
+            </div>
+            <div>
+              <Bar width="55%" height={4} tone="brand" alpha={0.5} />
+              <Bar width="70%" fade={0.6} mt={4} />
             </div>
           </div>
 
-          {/* main */}
-          <div className="flex-1 bg-white px-3.5 py-4">
-            <div className="text-[11px] leading-[1.2] font-extrabold whitespace-nowrap text-slate-900/85">
-              Sophia Bennett
+          <div className="mt-3 h-px bg-slate-100" />
+          <div className="mt-3 text-center text-[7px] font-black tracking-widest text-slate-500 uppercase">
+            Mehnat faoliyati
+          </div>
+          <div className="mt-2 flex flex-col gap-2">
+            <div className="flex items-start justify-between gap-2">
+              <Bar width="30%" height={4} tone="dark" alpha={0.35} />
+              <Bar width="45%" fade={0.6} />
             </div>
-            <div className="mt-1 text-[7.5px] font-bold tracking-[0.04em] whitespace-nowrap text-(--brand-primary) uppercase opacity-85">
-              Product Designer
+            <div className="flex items-start justify-between gap-2">
+              <Bar width="30%" height={4} tone="dark" alpha={0.35} />
+              <Bar width="50%" fade={0.6} />
             </div>
-            <Bar width="35%" height={4} tone="dark" alpha={0.2} mt={14} />
-            <Bar width="100%" tone="dark" mt={8} />
-            <Bar width="100%" tone="dark" fade={0.7} mt={5} />
-            <Bar width="70%" tone="dark" fade={0.5} mt={5} />
-            <Bar width="35%" height={4} tone="dark" alpha={0.2} mt={14} />
-            <div className="mt-2 flex items-start justify-between">
-              <div>
-                <Bar width="60%" tone="dark" />
-                <Bar width="45%" tone="dark" fade={0.6} mt={4} />
-              </div>
-              <Bar width="30%" height={4} tone="brand" alpha={0.4} />
-            </div>
-            <Bar width="100%" tone="dark" fade={0.4} mt={6} />
-            <Bar width="90%" tone="dark" fade={0.3} mt={4} />
-            <Bar width="35%" height={4} tone="dark" alpha={0.2} mt={14} />
-            <div className="mt-2 flex items-start justify-between">
-              <div>
-                <Bar width="55%" tone="dark" />
-                <Bar width="40%" tone="dark" fade={0.6} mt={4} />
-              </div>
-              <Bar width="30%" height={4} tone="brand" alpha={0.4} />
+            <div className="flex items-start justify-between gap-2">
+              <Bar width="30%" height={4} tone="dark" alpha={0.35} />
+              <Bar width="40%" fade={0.6} />
             </div>
           </div>
         </div>

@@ -1,9 +1,7 @@
 import HomePage from '@/pages/HomePage'
-import ResumePage from '@/pages/ResumePage'
-import CoverLetterPage from '@/pages/CoverLetterPage'
 import ObektivkaPage from '@/pages/ObektivkaPage'
 
-const SITE_URL = 'https://resumeio.uz'
+const SITE_URL = 'https://obektivka.uz'
 
 export interface RouteMeta {
   titleKey: string
@@ -26,34 +24,10 @@ export const routeDefs: RouteDef[] = [
     element: <HomePage />,
     meta: {
       titleKey: '',
-      seoTitle: 'ResumeIO — Free Online Resume, CV & Cover Letter Builder',
+      seoTitle: "Obektivka.uz — Rasmiy Ma'lumotnoma Tuzish Xizmati",
       description:
-        'Build a professional resume, CV, and cover letter online for free. Choose from multiple templates, preview in real time, and download as PDF or Word instantly.',
+        "Obektivka.uz orqali rasmiy ma'lumotnoma (obektivka) hujjatini bepul, tez va rasmiy standartga mos tarzda tuzing. Real vaqtda ko'rish, Word yoki PDF formatida yuklab olish.",
       canonical: `${SITE_URL}/`,
-    },
-  },
-  {
-    name: 'resume',
-    path: 'resume',
-    element: <ResumePage />,
-    meta: {
-      titleKey: 'menu.resume',
-      seoTitle: 'Resume Builder — Create a Professional CV Online | ResumeIO',
-      description:
-        'Build a professional resume (CV) online with modern templates and a real-time preview. Download as PDF or Word for free — no sign-up required.',
-      canonical: `${SITE_URL}/resume`,
-    },
-  },
-  {
-    name: 'coverLetter',
-    path: 'cover-letter',
-    element: <CoverLetterPage />,
-    meta: {
-      titleKey: 'menu.coverLetter',
-      seoTitle: 'Cover Letter Builder — Write a Professional Cover Letter Online | ResumeIO',
-      description:
-        'Create a professional cover letter online in minutes with modern templates. Download as PDF or Word for free — no sign-up required.',
-      canonical: `${SITE_URL}/cover-letter`,
     },
   },
   {
@@ -62,9 +36,9 @@ export const routeDefs: RouteDef[] = [
     element: <ObektivkaPage />,
     meta: {
       titleKey: 'menu.obektivka',
-      seoTitle: 'Obektivka (Official Reference Letter) Maker — ResumeIO',
+      seoTitle: "Obektivka (Rasmiy Ma'lumotnoma) Tuzish — Obektivka.uz",
       description:
-        'Create an official Obektivka reference letter for Uzbekistan government and private institutions. A4 format, official standard. Download as Word or PDF for free.',
+        "O'zbekiston davlat va nodavlat tashkilotlari uchun rasmiy obektivka (ma'lumotnoma) hujjatini yarating. A4 format, rasmiy standart. Word yoki PDF formatida bepul yuklab oling.",
       canonical: `${SITE_URL}/obektivka`,
     },
   },

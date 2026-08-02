@@ -73,8 +73,10 @@ export default function ObektivkaPage() {
   }
 
   const mobileOuterStyle = {
+    width: `${A4_PX * mobileScale}px`,
     height: `${(A4_HEIGHT_PX * 2 + 24) * mobileScale}px`,
     position: 'relative' as const,
+    overflow: 'hidden' as const,
   }
   const mobileInnerStyle = {
     transform: `scale(${mobileScale})`,
@@ -88,8 +90,7 @@ export default function ObektivkaPage() {
       <div className="obektivka-container">
         <div className="obektivka-topbar">
           <div>
-            <h1 className="obektivka-heading">Obyektivka (MA'LUMOTNOMA)</h1>
-            <p className="obektivka-sub">Ma'lumotlarni to'ldiring va yuklab oling</p>
+            <h3>Ma'lumotlarni to'ldiring va yuklab oling</h3>
           </div>
           <div className="obektivka-actions">
             <ObektivkaExport formData={formData} previewRef={previewRef} />
@@ -131,7 +132,16 @@ export default function ObektivkaPage() {
             <CloseIcon sx={{ color: 'white' }} fontSize="small" />
           </IconButton>
         </div>
-        <div style={{ padding: 8, overflowY: 'auto', maxHeight: 'calc(100vh - 50px)' }}>
+        <div
+          style={{
+            padding: 8,
+            overflowY: 'auto',
+            overflowX: 'hidden',
+            maxHeight: 'calc(100vh - 50px)',
+            display: 'flex',
+            justifyContent: 'center',
+          }}
+        >
           <div style={mobileOuterStyle}>
             <div style={mobileInnerStyle}>
               <ObektivkaPreview value={formData} />

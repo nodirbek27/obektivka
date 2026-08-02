@@ -15,9 +15,9 @@ export default function Footer() {
             className="flex items-center gap-1.5 text-[15px] font-extrabold text-slate-800 no-underline"
           >
             <span className="flex size-5.5 shrink-0 items-center justify-center rounded-md bg-(--brand-primary) text-[11px] font-black text-white">
-              R
+              O
             </span>
-            ResumeIO
+            Obektivka.uz
           </Link>
           <p className="m-0 flex items-center gap-1 text-[11.5px] text-slate-400">
             <LockOutlinedIcon sx={{ fontSize: 13 }} />
@@ -39,7 +39,7 @@ export default function Footer() {
         </nav>
 
         <p className="m-0 text-xs whitespace-nowrap text-slate-400">
-          &copy; {new Date().getFullYear()} ResumeIO &middot; {t('layout.footer_free_forever')}
+          &copy; {new Date().getFullYear()} Obektivka.uz &middot; {t('layout.footer_free_forever')}
         </p>
       </div>
     </footer>

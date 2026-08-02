@@ -10,7 +10,7 @@ interface CommonState {
 }
 
 const savedTheme = localStorage.getItem('theme') || '#239f55'
-const savedLocale = (localStorage.getItem('locale') as Locale | null) || 'en'
+const savedLocale = (localStorage.getItem('locale') as Locale | null) || 'uz'
 
 export const useCommonStore = create<CommonState>((set) => ({
   locale: savedLocale,
